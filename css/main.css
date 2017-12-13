@@ -1,0 +1,8 @@
+/* Los estilos de tu proyecto */
+.bg-image {
+    background-image: url("../assets/images/taxi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+}
