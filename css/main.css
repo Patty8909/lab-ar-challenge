@@ -1,8 +1,30 @@
 /* Los estilos de tu proyecto */
+
 .bg-image {
     background-image: url("../assets/images/taxi.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
     height: 100vh;
+}
+.bg-image2 {
+    background-image: url("../assets/images/conduce.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.6;
+    height: 100vh;
+}
+.section4 {
+    background-color: #F7B617;
+}
+@media (min-width: 768px) {
+    .view-mobile {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .view-desktop {
+        display: none;
+    }
 }
