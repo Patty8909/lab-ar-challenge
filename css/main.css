@@ -34,6 +34,13 @@
     background-color: #F7B617;
     border: none;
 }
+.border {
+    border: 1px solid #ffffff;
+}
+.list-style {
+    list-style: none;
+    line-height: 30px;
+}
 
 @media (min-width: 768px) {
     .view-mobile {
