@@ -75,20 +75,20 @@
     </header>
 <!-- section 1 -->
     <section class="bg-image view-mobile">
-      <div class=" pull-right">
-        <h1>Comienza a viajar </h1>
-        <h1> con <img src="assets/images/logoBlanco.png" alt=""> </h1>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Descarga el app</a></p>
+      <div class=" pull-right bg-color1 ">
+        <h1 class="text-white">Comienza a viajar </h1>
+        <h1 class="text-white"> con <img src="assets/images/logoBlanco.png" alt=""> </h1>
+        <p><a class="btn btn-primary btn-lg btn-color1 text-black" href="#" role="button">Descarga el app</a></p>
       </div>
     </section>
 
     <section class="bg-image view-desktop">
-      <div class=" pull-right">
+      <div class=" pull-right bg-color1 text-white">
         <h1>Disfruta del viaje</h1>
         <h1>Eres dueño de tu tiempo</h1>
         <h4> Viaja con <img src="assets/images/logoBlanco.png" alt=""> </h4>
-        <p><a class="btn btn-primary btn-lg" href="#myModal1" role="button" data-toggle="modal">REGÍSTRATE</a></p>
-
+        <p><a class="btn btn-primary btn-lg text-black btn-color1" href="#myModal1" role="button" data-toggle="modal">REGÍSTRATE</a></p>
+<!--Modal de regístrate -->
         <div id="myModal1" class="modal fade">
           <div class="modal-dialog modal-login">
             <div class="modal-content">
@@ -131,31 +131,36 @@
             </div>
           </div>
         </div>                
-    
+<!-- Termina modal de regístrate -->   
         <p>O bien</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Conviértete en un conductor</a></p> 
+        <p><a class="btn btn-primary btn-lg text-black btn-color1" href="#" role="button">Conviértete en un conductor</a></p> 
 
         
 
       </div>
     </section>
 <!-- section 2 -->
-    <section class="center-block">
+    <section class="center-block bg-color1 text-white">
       <div class="container">
-      <h3>La nueva app</h3>
+      <h3 class="view-mobile">La nueva app</h3>
       <div class="row">
         <img src="assets/images/iPhone6Plus.png" class="img-responsive" alt="iphone6Plus">
       </div>
       </div>
-      <h4>Llega a tu destino aún más rápido</h4>
+      <h4 class="view-mobile">Llega a tu destino aún más rápido</h4>
+      <div class="view-desktop">
+        <h3>Descarga la nueva app</h3>
+        <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido</p>
+        <p>Con sólo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes, tu conductor sabe exactamente a dónde ir.</p>
+      </div>
     </section>
 <!-- section 3 -->
   <section class="bg-image2">
-    <div class="">
+    <div class="text-white">
       <h2>Conduce cuando quieras</h2>
       <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-      <p><a class="btn btn-primary btn-lg" href="#myModal2" role="button" data-toggle="modal">Conviértete en conductor</a></p>
-
+      <p><a class="btn btn-primary btn-lg btn-color2" href="#myModal2" role="button" data-toggle="modal">Conviértete en conductor</a></p>
+<!--Modal de conviértete en conductor -->
       <div id="myModal2" class="modal fade">
           <div class="modal-dialog modal-login">
             <div class="modal-content">
@@ -204,11 +209,11 @@
             </div>
           </div>
         </div>                
-
+<!-- termina modal de conviértete en conductor -->
     </div>
   </section>
 <!-- section 4 -->
-    <section class="section4">
+    <section class="bg-color1">
         <form class="form-horizontal">
             <div class="form-group">
               <label for="inputEmail3" class="col-sm-2 control-label"><img src="assets/images/shape.png" alt=""></label>
@@ -224,7 +229,7 @@
             </div>
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">¡TRAZAR RUTA!</button>
+                <button type="submit" class="btn btn-default btn-color1">¡TRAZAR RUTA!</button>
               </div>
             </div>
           </form>
@@ -232,24 +237,30 @@
 
     </section>
     <!-- section -->
-    <section>
+    <section class="bg-color2">
       <div>
         <img src="assets/images/logoBlanco.png" alt="">
       </div>
       <div class="">
-      <ul class="">
-        <li class="">Viaja</li>
-        <li class="">Conduce</li>
-        <li class="">Ciudades</li>
-        <li class="">Ciudades</li>
-        <li class="">Entregas</li>
-        <li class="">Cómo funciona?</li>
-        <li class="">Países</li>
-        <li class="">Seguridad</li>
-      </ul>
-    </div>
-
+        <ul class="list">
+          <li class="">Viaja</li>
+          <li class="">Conduce</li>
+          <li class="">Ciudades</li>
+          <li class="">Ciudades</li>
+          <li class="">Entregas</li>
+          <li class="">Cómo funciona?</li>
+          <li class="">Países</li>
+          <li class="">Seguridad</li>
+        </ul>
+      </div>
     </section>
+    <!-- Footer -->
+    <footer class="bg-color2">
+      <div>
+        <p>© 2017 LabCar technologies Inc.</p>
+      </div>
+    </footer>
+    
 
 
 

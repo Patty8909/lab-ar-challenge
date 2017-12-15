@@ -12,12 +12,29 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    
     height: 100vh;
 }
-.section4 {
+.bg-color1 {
     background-color: #F7B617;
 }
+.bg-color2 {
+    background-color: #2B2B2B;
+}
+.text-white {
+    color: #ffffff;
+}
+.text-black {
+    color: black;
+}
+.btn-color1 {
+    background-color: #ffffff;
+    border: none;
+}
+.btn-color2 {
+    background-color: #F7B617;
+    border: none;
+}
+
 @media (min-width: 768px) {
     .view-mobile {
         display: none;
