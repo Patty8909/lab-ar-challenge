@@ -68,6 +68,7 @@
     height: 50vh;
     padding: 20px;
 }
+
 .section3 {
     margin: 20% 0 10% 0;
 }
@@ -86,6 +87,13 @@ hr {
 @media (min-width: 425px) {
     .view-mobile {
         display: none;
+    }
+    .section2 {
+        margin: 20px 20px 20px 0;
+        padding: 20px;
+        border-top: 3px solid #ffffff;
+        border-right: 3px solid #ffffff;
+        border-bottom: 3px solid #ffffff;
     }
     
 }
