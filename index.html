@@ -34,7 +34,40 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Viaja</a></li>
               <li><a href="#">Conduce</a></li>
-              <li><a href="#">Inicia Sesión</a></li>
+              <li><a href="#myModal" data-toggle="modal">Inicia Sesión</a></li>
+
+<!-- Modal de Inicia Sesión -->
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <div class="modal-header">				
+        
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="/examples/actions/confirmation.php" method="post">
+          <div class="form-group">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            <input type="text" class="form-control" placeholder="Username" required="required">
+          </div>
+          <div class="form-group">
+            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+            <input type="password" class="form-control" placeholder="Password" required="required">					
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+          </div>
+        </form>				
+        
+      </div>
+      <div class="modal-footer">
+        <p> Forgot password! <a href="#">Click Here</a> </p>
+      </div>
+    </div>
+  </div>
+</div>         
+<!--Termina modal inicia sesión-->
+
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -54,9 +87,56 @@
         <h1>Disfruta del viaje</h1>
         <h1>Eres dueño de tu tiempo</h1>
         <h4> Viaja con <img src="assets/images/logoBlanco.png" alt=""> </h4>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">REGÍSTRATE</a></p>
+        <p><a class="btn btn-primary btn-lg" href="#myModal1" role="button" data-toggle="modal">REGÍSTRATE</a></p>
+
+        <div id="myModal1" class="modal fade">
+          <div class="modal-dialog modal-login">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>				
+                <h3>Ya tienes una cuenta?</h3>
+                <h4>O CREA UNA CUENTA NUEVA</h4> 
+              </div>
+              <div class="modal-body">
+                <form action="/examples/actions/confirmation.php" method="post">
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Nombre" required="required">
+                    <input type="text" class="form-control" placeholder="Apellido" required="required">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Correo Electrónico:ejemplo@correo.mx" required="required">					
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control" placeholder="Teléfono" required="required">					
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Contraseña" required="required">					
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Ciudad" required="required">					
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control" placeholder="(Opcional) Código de invitación" required="required">					
+                  </div>
+                  <div class="form-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cómo te enteraste de nosotros? <span class="caret"></span>
+                        </button>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="ENVIAR">
+                  </div>
+                </form>				                
+              </div>
+            </div>
+          </div>
+        </div>                
+    
         <p>O bien</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Conviértete en un conductor</a></p> 
+
+        
+
       </div>
     </section>
 <!-- section 2 -->
@@ -74,7 +154,57 @@
     <div class="">
       <h2>Conduce cuando quieras</h2>
       <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Conviértete en conductor</a></p>
+      <p><a class="btn btn-primary btn-lg" href="#myModal2" role="button" data-toggle="modal">Conviértete en conductor</a></p>
+
+      <div id="myModal2" class="modal fade">
+          <div class="modal-dialog modal-login">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>				 
+              </div>
+              <div class="modal-body">
+                
+                  <div class="form-group">
+                      <h5>¿Tienes vehículo de 4 puertas?</h5>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Si <span class="caret"></span>
+                        </button>
+                  </div>
+                  <div class="form-group">
+                      <h5>Marca</h5>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Elige la marca del vehículo<span class="caret"></span>
+                        </button>
+                      <p>¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="#">sociosmdv@uber.com</a></p>
+                  </div>
+                  <div class="form-group">
+                      <h5>Modelo</h5>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          modelo 1 <span class="caret"></span>
+                        </button>
+                  </div>
+                  <div class="form-group">
+                      <h5>Año</h5>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          2017 <span class="caret"></span>
+                        </button>
+                  </div>
+                  <div class="form-group">
+                      <h5>Número de la matrícula</h5>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Número de la matrícula <span class="caret"></span>
+                        </button>
+                      <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="ENVIAR">
+                  </div>
+                </form>				                
+              </div>
+            </div>
+          </div>
+        </div>                
+
     </div>
   </section>
 <!-- section 4 -->
