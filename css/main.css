@@ -83,6 +83,14 @@ hr {
 .footer {
     padding: 1.5%;
 }
+.style-icons {
+    display: flex;
+}
+.style-icons li {
+    padding: 10px;
+    list-style: none;
+    margin-top: 80%;
+}
 
 @media (min-width: 425px) {
     .view-mobile {
@@ -95,10 +103,14 @@ hr {
         border-right: 3px solid #ffffff;
         border-bottom: 3px solid #ffffff;
     }
-    
+    .style-icons li {
+        padding: 10px;
+        list-style: none;
+    }
 }
 @media (max-width: 425px) {
     .view-desktop {
         display: none;
     }
+    
 }
