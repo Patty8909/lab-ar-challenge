@@ -114,3 +114,6 @@ hr {
     }
     
 }
+.form-control::placeholder {
+    color: #ffffff;
+}
